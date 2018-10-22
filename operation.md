@@ -82,3 +82,14 @@ w进行保存，此时完成格式化。下面建立ext4文件系统：
 > source activate 新环境名
 > conda env export > environment.yml
 
+### pytorch官方指令表(18.10.21)
+
+```
+# cuda 8.0
+conda install pytorch torchvision cuda80
+# cuda 9.0
+conda install pytorch torchvision
+# cuda 9.2
+conda install pytorch torchvision cuda92
+```
+
