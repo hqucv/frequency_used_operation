@@ -93,3 +93,25 @@ conda install pytorch torchvision
 conda install pytorch torchvision cuda92
 ```
 
+### 辅助环境包
+> conda install scikit-learn scipy numpy
+
+### 配置github SSH key
+> ssh-keygen -t rsa -b 4096 -C "你的邮箱地址"
+
+提示密钥存储在家目录.ssh下面的id_rsa
+提示输入密钥密码（默认回车为空）
+提示创建成功
+
+在后台创建ssh进程
+> eval "$(ssh-agent -s)"
+
+添加ssh密钥
+> ssh-add ~/.ssh/id_rsa
+
+打开github设置页面选择SSH and GPG keys
+选择New SSH key
+
+将～/.ssh/id_rsa.public复制到Key中，随意设置一个Title，Add SSH Key
+
+> cat ~/.ssh/id_rsa.pub
