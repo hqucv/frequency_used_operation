@@ -82,6 +82,8 @@ w进行保存，此时完成格式化。下面建立ext4文件系统：
 > source activate 新环境名
 > conda env export > environment.yml
 
+
+
 ### pytorch官方指令表(18.10.21)
 
 ```
@@ -93,10 +95,16 @@ conda install pytorch torchvision
 conda install pytorch torchvision cuda92
 ```
 
+
+
 ### 辅助环境包
+
 > conda install scikit-learn scipy numpy
 
+
+
 ### 配置github SSH key
+
 > ssh-keygen -t rsa -b 4096 -C "你的邮箱地址"
 
 提示密钥存储在家目录.ssh下面的id_rsa
@@ -115,3 +123,21 @@ conda install pytorch torchvision cuda92
 将～/.ssh/id_rsa.public复制到Key中，随意设置一个Title，Add SSH Key
 
 > cat ~/.ssh/id_rsa.pub
+
+
+
+### 在conda虚拟环境中使用jupyter
+
+在虚拟环境中安装jupyer-kernel
+
+> conda install ipykernel
+
+将环境写入notebook的kernel中
+
+> python -m ipykernel install --user --name 环境名称 --display-name "Python (环境名称)"
+
+如系统已安装jupyter，则在虚拟环境外启动jupyter
+
+>  jupyter notebook
+
+此时在New中可以看见虚拟环境的名字
