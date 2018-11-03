@@ -76,11 +76,11 @@ w进行保存，此时完成格式化。下面建立ext4文件系统：
 
 分享环境
 > source activate 要分享的环境名
+>
 > conda env export > environment.yml
 
 获得environment,yml文件后，复制到要分享的电脑上
-> source activate 新环境名
-> conda env export > environment.yml
+> conda env create -f environment.yaml
 
 
 
