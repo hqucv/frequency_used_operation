@@ -141,3 +141,35 @@ conda install pytorch torchvision cuda92
 >  jupyter notebook
 
 此时在New中可以看见虚拟环境的名字
+
+
+
+### 备份
+
+>  tar cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys --exclude=/media 
+> $ cd /media/（U盘）
+
+在tryUbuntu根目录下有media文件夹，里面是U盘文件夹和新安装的系统文件夹，在在里分别用（U盘）和（UBUNTU）表示
+> $ sudo su
+> mount -o remount rw ./
+> sudo cp /media/(Ubuntu)/boot/grub/grub.cfg ./    
+
+将新系统根目录下/boot/grub/grub.cfg文件备份到U盘中
+> sudo cp /media/(UBUNTU)/etc/fstab ./
+
+将新系统根目录下/etc/fstab文件备份到U盘中
+fstab是与系统开机挂载有关的文件，grub.cfg是与开机引导有关的文件，所以这一步至关重要
+> cd /media/(UBUNTU)
+
+删除新装ubuntu全部的系统文件，有用的fstab及grub.cfg已经备份
+> sudo rm -rf ./*
+
+将U盘中backup.tgz复制到该目录下
+> cp /media/(U盘)/backup.tgz ./
+
+解压缩
+> sudo tar xvpfz backup.tgz ./
+
+创建打包系统时排除的文件
+
+> sudo mkdir proc lost+found mnt sys media
