@@ -172,4 +172,4 @@ fstab是与系统开机挂载有关的文件，grub.cfg是与开机引导有关�
 
 创建打包系统时排除的文件
 
-> sudo mkdir proc lost+found mnt sys media
+> sudo mkdir proc lost+found mnt sys media tmp
