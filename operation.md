@@ -182,3 +182,11 @@ $ sudo systemctl start docker
 $ sudo systemctl enable docker
 $ docker --version
 ```
+
+### docker-CE
+
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+### caffe
+
+https://github.com/BVLC/caffe/tree/master/docker
