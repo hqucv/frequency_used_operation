@@ -81,6 +81,10 @@ w进行保存，此时完成格式化。下面建立ext4文件系统：
 
 获得environment,yml文件后，复制到要分享的电脑上
 > conda env create -f environment.yaml
+>
+> or
+>
+> conda env create -f=environment.yml
 
 
 
