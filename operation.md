@@ -148,6 +148,13 @@ conda install pytorch torchvision cuda92
 
 
 
+### 将Conda中的python作为系统默认
+vim ~/.bashrc
+export PATH="/home/myname/anaconda2/bin:$PATH"
+source ~/.bashrc
+
+
+
 ### 备份
 
 >  tar cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys --exclude=/media 
