@@ -201,3 +201,10 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ### caffe
 
 https://github.com/BVLC/caffe/tree/master/docker
+
+### Ubuntu清除内存
+```
+sudo sh -c 'echo 1 > /proc/sys/vm/drop_caches'
+sudo sh -c 'echo 2 > /proc/sys/vm/drop_caches'
+sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
+```
