@@ -99,6 +99,36 @@ conda install pytorch torchvision
 conda install pytorch torchvision cuda92
 ```
 
+### pytorch1.0安装指令
+```
+# Linux, Conda, Python 3.6, CUDA 9
+conda install pytorch torchvision -c pytorch
+
+# Linux, Conda, Python 3.6, CUDA 10
+conda install pytorch torchvision cuda100 -c pytorch
+
+# Linux, pip, Python 3.6, CUDA 9
+pip3 install torch torchvision
+
+# Linux, pip, Python 3.6, CUDA 10
+pip3 install http://download.pytorch.org/whl/cu100/torch-1.0.0-cp36-cp36m-linux_x86_64.whl
+pip3 install torchvision
+
+# Linux, Conda, Python 2.7, CUDA 9
+conda install pytorch torchvision -c pytorch
+
+# Linux, Conda, Python 2.7, CUDA 10
+conda install pytorch torchvision cuda100 -c pytorch
+
+# Linux, pip, Python 2.7, CUDA 9
+pip install torch torchvision
+
+# Linux, pip, Python 2.7, CUDA 10
+pip install http://download.pytorch.org/whl/cu100/torch-1.0.0-cp27-cp27mu-linux_x86_64.whl
+pip install torchvision
+# if the above command does not work, then you have python 2.7 UCS2, use this command
+pip install http://download.pytorch.org/whl/cu100/torch-1.0.0-cp27-cp27m-linux_x86_64.w
+```
 
 
 ### 辅助环境包
