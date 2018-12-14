@@ -130,11 +130,9 @@ pip install torchvision
 pip install http://download.pytorch.org/whl/cu100/torch-1.0.0-cp27-cp27m-linux_x86_64.w
 ```
 
-
 ### 辅助环境包
 
 > conda install scikit-learn scipy numpy
-
 
 
 ### 配置github SSH key
@@ -242,3 +240,7 @@ sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
 ### Ubuntu旋转显示器
 
 > xrandr -o left
+
+### 指定GPU设备
+
+> CUDA_VISIBLE_DEVICES=1 python xxx.py
