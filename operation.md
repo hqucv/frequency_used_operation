@@ -24,6 +24,18 @@
 
 w进行保存，此时完成格式化。下面建立ext4文件系统：
 
+如果是大于2T的数据盘，需要使用gpt分区
+
+'''
+sudo parted
+(parted) select/dev/sdX
+(parted) mklabel gpt
+(parted) mkpart primary 0% 100%
+(parted) quit
+'''
+
+sudo mkfs.ext4/dev/sdX1
+
 > sudo mkfs -t ext4 /dev/sdb
 
 对于一般存储，我们使用ext4文件系统。
